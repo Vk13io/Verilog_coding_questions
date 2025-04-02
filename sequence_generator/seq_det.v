@@ -1,3 +1,7 @@
+
+
+// 0 0 1 1 2 2 3 4 5 7 9 12 16 21 28 37 (sequence generating)
+//  0 0 1 1 2 2 initialize the values in temporary reg/in memory then upcoming values are mem[i] = mem[i-2]+mem[i-3]
 module seq_det(
     input clk, rst,
     output reg [7:0] seq_out
